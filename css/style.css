@@ -12,6 +12,10 @@ body {
     overflow: auto;
 }
 
+a:hover {
+    text-decoration: unset;
+}
+
 .main-nav {
     background-color: #339966;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(97, 97, 97, 1);
@@ -76,11 +80,26 @@ body {
 
 #header .header-text {
     color: #339966;
-    font-size: 5rem;
 }
 
-#header .text2-header {
-    font-size: 2rem;
+@media screen and (min-width: 801px) {
+    #header .header-text {
+        font-size: 5rem;
+    }
+
+    #header .text2-header {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #header .header-text {
+        font-size: 8vw;
+    }
+
+    #header .text2-header {
+        font-size: 5vw;
+    }
 }
 
 .section-title {
@@ -100,7 +119,7 @@ body {
     margin-top: 50px;
 }
 
-#our-offer {
+#offer {
     background-color: #DCDCDC;
 }
 
@@ -119,8 +138,11 @@ body {
     background-position: center, center;
 }
 
-#contact .number-contact .phone, .fas {
+#contact .number-contact, #contact .mail-contact, .fas {
     color: #339966;
     font-size: 20px;
 }
 
+#contact .contact-link:hover>h5>i, #contact .contact-link:hover>h5>span {
+    color: #696969;
+}

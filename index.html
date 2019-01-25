@@ -5,26 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-    <title>Trans-Express sp.c.</title>
+    <title>Trans-Express s.c.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 
 
 </head>
 
-<body>
+<body id="body">
 <section id="menu">
     <nav class="main-nav navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" data-toggle="collapse" data-target="#navbarNavAltMarkup.show"
-           aria-controls="navbarNavAltMarkup.show" href="#body">TRANS-EXPRESS s.c.</a>
+           aria-controls="navbarNavAltMarkup.show" href="#body"><h4 class="logo-trans">TRANS-EXPRESS s.c.</h4></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,9 +71,9 @@
     <div class="container text-uppercase text-center position-relative" id="header-container-background">
         <div class="row">
             <div class="col col-md-12 col-lg-12">
+                <p class="header-text mb-3 font-weight-bold">Trans-Express</p>
+                <p class="text2-header under-text">transport krajowy i międzynarodowy</p>
             </div>
-            <p class="header-text mb-3 font-weight-bold">Trans-Express</p>
-            <p class="text2-header under-text">transport krajowy i międzynarodowy</p>
         </div>
         <!--
                                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -102,11 +111,11 @@
 <section id="about-us">
 
     <div class="container text-center pt-5 pb-5">
-        <h1 class="section-title font-weight-bold text-uppercase">O nas</h1>
+        <h1 class="section-title font-weight-bold text-uppercase"><p>O nas</p></h1>
         <div class="row">
             <div class="col-12 md-12 col-lg-12">
 
-                <img src="../Trans-Express/img/LOGO_white.png" class="logo mt-5 mb-5" alt="logo" height="80"
+                <img src="img/LOGO_white.png" class="logo mt-5 mb-5" alt="logo" height="80"
                      width="300">
 
                 <p class="section-text text-justify mt-5 ml-5 mr-5"> Jesteśmy profesjonalną firmą transportową w
@@ -125,9 +134,9 @@
 
 </section>
 
-<section id="our-offer">
+<section id="offer">
     <div class="container text-center p-5">
-        <h1 class="section-title font-weight-bold text-uppercase mb-5">Oferta</h1>
+        <h1 class="section-title font-weight-bold text-uppercase mb-5"><p>Oferta</p></h1>
         <div class="row">
             <div class="col-12 md-6 col-lg-6">
 
@@ -165,15 +174,24 @@
 
 <section id="contact">
     <div class="container text-center pt-5 pb-5">
-        <h1 class="section-title font-weight-bold text-uppercase mb-5">Kontakt</h1>
+        <h1 class="section-title font-weight-bold text-uppercase mb-5"><p>Kontakt</p></h1>
         <div class="row">
             <div class="col-md-12 align-self-center">
                 <h2 class="contact-name text-uppercase mb-4">Trans-Express s.c.</h2>
-                <h5 class="number-contact"><i class="icon-phone fas fa-mobile-alt"></i> <a href="tel:730041033"
-                                                                                           class="phone font-weight-bold">730
-                    041 033</a></h5>
-                <h5 class=mail-contact><i class="fas fa-envelope"></i> trans-express.gmail.com</h5>
-
+                <a href="tel:730041033"
+                   class="contact-link">
+                    <h5 class="number-contact font-weight-bold">
+                        <i class="icon-phone fas fa-mobile-alt"></i>
+                        <span>730 041 033</span>
+                    </h5>
+                </a>
+                <a href="mailto:trans.express.com.pl@gmail.com"
+                   class="contact-link">
+                    <h5 class="mail-contact">
+                        <i class="fas fa-envelope"> </i>
+                        <span>trans.express.com.pl@gmail.com</span>
+                    </h5>
+                </a>
             </div>
         </div>
     </div>
@@ -193,14 +211,8 @@
     </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-<script src="JS/bootstrap.min.js"></script>
-
+<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+<script src="js/scroll-reveal.js"></script>
 </body>
 
 </html>

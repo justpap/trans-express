@@ -146,3 +146,7 @@ a:hover {
 #contact .contact-link:hover>h5>i, #contact .contact-link:hover>h5>span {
     color: #696969;
 }
+
+#contact .contact-link:focus>h5>i, #contact .contact-link:focus>h5>span {
+    color: #339966;
+}

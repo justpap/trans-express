@@ -7,7 +7,7 @@ sr.reveal('.header-text, .text2-header', {
     reset: true,
     delay: 100
 });
-sr.reveal('p, span, i, .fab, .text-list', {
+sr.reveal('p, .fas, .reveal-slow', {
     reset: true,
     delay: 300
 });

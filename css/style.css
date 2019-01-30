@@ -62,7 +62,7 @@ a:hover {
 }
 
 #header {
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/bg1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bg1.jpg);
     background-color: #C7C7C7;
     color: #fff;
     height: 100vh;
@@ -130,7 +130,7 @@ a:hover {
 
 #contact {
 
-    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/img3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/img5.jpg);
     background-color: #C7C7C7;
     color: #fff;
 
